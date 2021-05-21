@@ -44,27 +44,27 @@ section div {
 }
 
 section div:nth-child(1){
-  transform: translateZ(300px);
+  transform: translateZ(400px);
 }
 
 section div:nth-child(2){
-  transform: rotateY(60deg) translateZ(300px);
+  transform: rotateY(60deg) translateZ(400px);
 }
 
 section div:nth-child(3){
-  transform: rotateY(120deg) translateZ(300px);
+  transform: rotateY(120deg) translateZ(400px);
 }
 
 section div:nth-child(4){
-   transform: rotateY(180deg) translateZ(300px);
+   transform: rotateY(180deg) translateZ(400px);
 }
 
 section div:nth-child(5){
-  transform: rotateY(240deg) translateZ(300px);
+  transform: rotateY(240deg) translateZ(400px);
 }
 
 section div:nth-child(6){
-  transform: rotateY(300deg) translateZ(300px);
+  transform: rotateY(300deg) translateZ(400px);
 }
 
 /* 定義旋轉動畫 */
