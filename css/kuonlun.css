@@ -1,9 +1,3 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 body {
   display: flex;
   justify-content:left;
@@ -22,7 +16,6 @@ body {
 .container .box {
   transform-style: preserve-3d;
   animation: animate 25s linear infinite;
-
 }
 
 @keyframes animate {
