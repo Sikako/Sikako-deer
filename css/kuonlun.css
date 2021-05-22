@@ -1,0 +1,40 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .box {
+  transform-style: preserve-3d;
+}
+
+.container .box span {
+  position: absolute;
+  color: #fff;
+  font-size: 3.5em;
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-weight: 900;
+  padding: 0 10px;
+  transform-style: preserve-3d;
+  text-shadow: 0 5px 15px rgba(0.0.0.0.25);
+  transform: translate(-150%, -450%) rotateX(calc(var(--i) * 22.5deg));
+}
+
+.container .box span i:nth-child(1) {
+  font-style: initial;
+  color: #ff246f;
+}
+
+.container .box span i:nth-child(2) {
+  font-style: initial;
+  color: #12b5ff;
+}
