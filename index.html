@@ -6,6 +6,7 @@
     <meta name="vieewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/kuonlun.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
     <script>
       function includeHTML() {
         var z, i, elmnt, file, xhttp;
@@ -53,6 +54,7 @@
         <span style="--i:12;"><i>Sikako</i>'s <i>W</i>ebsite</span>
       </div>
     </div>
+
     <svg version="1.2" baseProfile="tiny" id="deer"
     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 595.28 841.89"
     overflow="visible" xml:space="preserve">
@@ -611,6 +613,7 @@
    c-3.68,4.2-8.86,6.39-13.13,9.79C331.64,435.85,330.3,437.08,328.92,438.26z"/>
   </g>
     </svg>
+
     <section>
       <div><img src="./pictures/1.jpg"></div>
       <div><img src="./pictures/2.jpg"></div>
@@ -623,7 +626,60 @@
       <div class="travel" style="--i:3">travel</div>
     </section>
 
-    <!-- <script>includeHTML();</script> -->
-    
+
+    <!-- <div w3-include-html="slide.html"></div> -->
+    <div class="swiper-container mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <script>includeHTML();</script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
   </body>
 </html>
