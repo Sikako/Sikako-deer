@@ -145,7 +145,7 @@ img {
 
 
 .swiper-container {
-  width: 100%;
+  width: 50%;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -159,5 +159,5 @@ img {
 
 .swiper-slide img {
   display: block;
-  /* width: 100%; */
+  width: 40%;
 }
