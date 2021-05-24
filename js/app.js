@@ -19,11 +19,11 @@ function init() {
   camera.position.set(0,-10, 500)
 
 
-  const ambient = new THREE.AmbientLight(0xfff,5)
+  const ambient = new THREE.AmbientLight(0xffffff,1)
   scene.add(ambient)
 
 
-  const light = new THREE.DirectionalLight(0xfff, 50)
+  const light = new THREE.DirectionalLight(0x1f0f05, 15)
   light.position.set(10,10,10);
   scene.add(light)
 
