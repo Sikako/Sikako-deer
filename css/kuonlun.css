@@ -10,7 +10,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translateY(-350px) translateX(50px) rotateZ(-10deg);
+  transform: translateY(-250px) translateX(50px) rotateZ(-10deg);
 }
 
 .container .box {
