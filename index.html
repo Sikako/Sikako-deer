@@ -6,6 +6,7 @@
     <meta name="vieewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/kuonlun.css">
+    <link rel="stylesheet" href="./css/style.css">
     <!-- <link rel="stylesheet" href="./css/swiper-bundle.min.css"> -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <!-- <script>
@@ -39,6 +40,11 @@
     </script> -->
   </head>
   <body>
+    
+
+    <div class="scene"></div>
+
+    <!-- 滾輪 -->
     <div class="container">
       <div class="box">
         <span style="--i:1;"><i>Sikako</i>'s <i>W</i>ebsite</span>
@@ -58,7 +64,7 @@
 
     
 
-
+<!-- 證件照 -->
     <div class="swiper-container mySwiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide"><img src="./pictures/img1.jpg" /></div>
@@ -72,7 +78,7 @@
     </div>
 
 
-
+<!-- Travel -->
     <section>
       <div><img src="./pictures/1.jpg"></div>
       <div><img src="./pictures/2.jpg"></div>
@@ -84,6 +90,11 @@
       <div class="travel" style="--i:2">travel</div>
       <div class="travel" style="--i:3">travel</div>
     </section>
+
+
+    <script src="./js/three.min.js"></script>
+    <script src="./js/GLTFLoader.js"></script>
+    <script src="./js/app.js"></script>
 
 
 
@@ -99,9 +110,9 @@
         centeredSlides: true,
         slidesPerView: "auto",
         coverflowEffect: {
-          rotate: 30,
+          rotate: 40,
           stretch: 1,
-          depth: 1000,
+          depth: 3000,
           modifier: 1,
           slideShadows: true,
         },
